@@ -1,0 +1,322 @@
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0f1323;
+  .top {
+    height: 75px;
+    position: relative;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+    .share {
+      position: absolute;
+      right: 9px;
+      top: 9px;
+      width: 24px;
+      height: 24px;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+      img {
+        width: 17px;
+        height: 15px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+      }
+    }
+  }
+  .mid {
+    height: 264px;
+    overflow: hidden;
+    position: relative;
+    .vs {
+      position: absolute;
+      width: 156px;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    div {
+      width: 50%;
+      height: 100%;
+      float: left;
+      position: relative;
+      image {
+        // position: absolute;
+        height: 265px;
+
+        // right: 0;
+        // left: 0;
+        // top: 0;
+        // bottom: 0;
+        // margin: auto;
+      }
+    }
+  }
+  .spanLabel {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 9px;
+    border-radius: 8px;
+    color: #fff;
+    padding: 1px 4px;
+    margin-top: -5px;
+  }
+  .users {
+    overflow: hidden;
+    padding: 0 13px;
+    padding-top: 20px;
+    .left {
+      float: left;
+      min-width: 90px;
+      height: 36px;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 18px;
+      overflow: hidden;
+      position: relative;
+      padding-left: 40px;
+      color: #fff;
+      .img {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .right {
+      float: right;
+      min-width: 90px;
+      height: 36px;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 18px;
+      overflow: hidden;
+      position: relative;
+      padding-right: 40px;
+      color: #fff;
+      text-align: right;
+      .img {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .nums {
+    overflow: hidden;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 0 9px;
+    padding-top: 25px;
+    .txt {
+      margin-bottom: 6px;
+    }
+    .left {
+      min-width: 80px;
+
+      float: left;
+    }
+    .right {
+      min-width: 80px;
+      float: right;
+    }
+  }
+  .time {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .btn {
+    width: 292px;
+    line-height: 44px;
+    background: rgba(252, 84, 40, 1);
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+  }
+  .guess {
+    height: 351px;
+    background: rgba(255, 255, 255, 1);
+    .title {
+      padding-left: 22px;
+      padding-top: 24px;
+      font-size: 16px;
+      font-weight: bold;
+      padding-bottom: 18px;
+    }
+    input {
+      padding-top: 5px;
+    }
+    .persons {
+      overflow: hidden;
+      padding: 0 13px;
+      .img {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+        left: 22px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .cir {
+        width: 11px;
+        height: 11px;
+        border: 1px solid rgba(102, 102, 102, 1);
+        border-radius: 6px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 7px;
+      }
+      .choose {
+        width: 13px;
+        height: 13px;
+        border-radius: 6px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 4px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .left {
+        float: left;
+        min-width: 70px;
+        height: 36px;
+        background: rgba(252, 84, 40, 0.2);
+        border-radius: 18px;
+        overflow: hidden;
+        position: relative;
+        padding-left: 62px;
+      }
+      .right {
+        float: right;
+        min-width: 70px;
+        height: 36px;
+        background: #ececec;
+        border-radius: 18px;
+        position: relative;
+        padding-left: 62px;
+      }
+    }
+    .prices {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 20px;
+      margin-bottom: 10px;
+      .item {
+        width: 78px;
+        height: 34px;
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(153, 153, 153, 1);
+        border-radius: 4px;
+        line-height: 34px;
+        text-align: center;
+        position: relative;
+        img {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 12px;
+          height: 12px;
+        }
+      }
+      .active {
+        color: rgba(252, 84, 40, 1);
+        border: 1px solid rgba(252, 84, 40, 1);
+      }
+    }
+    .options {
+      margin-top: 40px;
+      padding-left: 20px;
+      span {
+        color: #333;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 40px;
+        &:last-of-type {
+          color: #fc5428;
+        }
+        &:first-of-type {
+          margin: 0 10px;
+          margin-left: 5px;
+        }
+      }
+      .send {
+        float: right;
+        width: 92px;
+        line-height: 40px;
+        background: rgba(252, 84, 40, 1);
+        border-radius: 3px;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        margin-right: 15px;
+        margin-left: 10px;
+        margin-top: -3px;
+      }
+    }
+  }
+  .inner {
+    width: 306px;
+    height: 130px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    img {
+      width: 44px;
+      height: 44px;
+      margin: 0 auto;
+      display: block;
+      padding-top: 20px;
+    }
+    .title {
+      font-size: 15px;
+      font-family: PingFang SC;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 10px;
+    }
+    .btn {
+      overflow: hidden;
+      width: 100px;
+      margin: 0 auto;
+      margin-top: 30px;
+      text-align: center;
+      line-height: 38px;
+      background: rgba(252, 84, 40, 1);
+      border-radius: 2px;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,316 @@
+.container {
+  .spanLabel {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 9px;
+    border-radius: 8px;
+    color: #fff;
+    padding: 1px 4px;
+  }
+  .line {
+    height: 1px;
+    background-color: #ddd;
+  }
+  .person {
+    line-height: 47px;
+    padding: 0 18px;
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .user {
+      display: inline-block;
+      vertical-align: middle;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .name {
+      display: inline-block;
+      width: 85px;
+      line-height: 15px;
+      vertical-align: middle;
+      margin-left: 10px;
+      img {
+        width: 11px;
+        height: 11px;
+        margin-left: 2px;
+        vertical-align: middle;
+      }
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 65px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+    .focus {
+      width: 50px;
+      line-height: 23px;
+      border: 1px solid #fc5428;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 11px;
+      color: #fc5428;
+      float: right;
+      margin-top: 15px;
+    }
+    .active {
+      background: rgba(252, 84, 40, 1);
+      border: none;
+      color: #fff;
+    }
+  }
+  .list {
+    overflow: hidden;
+    padding-left: 17px;
+    .item {
+      position: relative;
+      margin-right: 15px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border-radius: 7px;
+      overflow: hidden;
+      min-height: 90px;
+      .left {
+        width: 193px;
+        height: 90px;
+        -webkit-clip-path: polygon(100% 0, 75% 100%, 0 100%, 0 0);
+        clip-path: polygon(100% 0, 75% 100%, 0 100%, 0 0);
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        position: relative;
+        .up {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          .num {
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            padding-left: 3px;
+            font-size: 9px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.4);
+            line-height: 25px;
+            width: 100%;
+          }
+          .win {
+            min-width: 40px;
+            padding: 0 5px;
+            line-height: 17px;
+            background: rgba(252, 84, 40, 1);
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 0 0 5px 0;
+            font-size: 12px;
+          }
+          .label {
+            padding: 1px 2px;
+            line-height: 11px;
+            background: rgba(0, 0, 0, 1);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 6px;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            font-size: 9px;
+          }
+        }
+      }
+      .right {
+        width: 193px;
+        height: 90px;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 25% 0);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 25% 0);
+        right: 0px;
+        top: 0;
+        overflow: hidden;
+        position: absolute;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        .up {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          .num {
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            padding-left: 13px;
+            font-size: 9px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.4);
+            line-height: 25px;
+            width: 100%;
+          }
+          .win {
+            width: 40px;
+            line-height: 17px;
+            background: rgba(252, 84, 40, 1);
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 0 0 0 5px;
+            font-size: 12px;
+          }
+          .label {
+            padding: 1px 2px;
+            line-height: 11px;
+            background: rgba(0, 0, 0, 1);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 6px;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 9px;
+          }
+        }
+      }
+    }
+    .empty {
+      img {
+        width: 132px;
+        height: 114px;
+        margin: 0 auto;
+        display: block;
+        margin-top: 47px;
+      }
+      .tips {
+        font-size: 15px;
+        font-family: PingFang SC;
+        font-weight: 500;
+        color: rgba(119, 119, 119, 1);
+        margin-top: 18px;
+        text-align: center;
+      }
+      .start {
+        width: 129px;
+        line-height: 34px;
+        text-align: center;
+        font-size: 14px;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+        background: rgba(252, 84, 40, 1);
+        border-radius: 2px;
+        margin: 0 auto;
+        margin-top: 40px;
+      }
+    }
+  }
+  .info {
+    width: 345px;
+    // height: 99px;
+    background: rgba(243, 243, 243, 1);
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding-top: 12px;
+    .title {
+      overflow: hidden;
+      padding-bottom: 11px;
+      border-bottom: 1px solid #ddd;
+      .left {
+        float: left;
+        position: relative;
+        margin-right: 15px;
+        margin-left: 7px;
+        width: 64px;
+        height: 39px;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 3px;
+        }
+        .play {
+          width: 23px;
+          height: 23px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+        }
+      }
+      .right {
+        float: left;
+        .name {
+          width: 245px;
+          line-height: 15px;
+          span {
+            border: 1px solid rgba(252, 84, 40, 1);
+            border-radius: 3px;
+            font-size: 11px;
+            color: rgba(252, 88, 45, 1);
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0px 2px;
+            margin-right: 3px;
+            box-sizing: border-box;
+          }
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .instro {
+          width: 245px;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 5px;
+          font-size: 12px;
+        }
+      }
+    }
+    .detail {
+      line-height: 38px;
+      font-size: 11px;
+      padding-right: 40px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding-left: 7px;
+      position: relative;
+      span {
+        position: absolute;
+        right: 13px;
+        top: 0px;
+        color: #fc5428;
+      }
+    }
+    .detail2 {
+      margin-top: 15px;
+      font-size: 11px;
+      line-height: 16px;
+      padding: 0 7px;
+      padding-bottom: 15px;
+    }
+  }
+}

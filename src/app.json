@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "pages/home/main",
+    "pages/videoSingPk/main",
+    "pages/web/main",
+    "pages/videoSing/main",
+    "pages/challenge2/main",
+    "pages/pkList2/main",
+    "pages/video/main", 
+    "pages/redDetail/main",
+    "pages/infoStep1/main",     
+    "pages/letter/main",
+    "pages/redNotice/main",
+    "pages/myRed/main",
+    "pages/pk/main",
+    "pages/giftBack/main",
+    "pages/guess/main",
+    "pages/videoOne/main",
+    "pages/money/main",
+    "pages/infoStep3/main",
+    "pages/infoStep2/main",
+    "pages/userInfo/main",
+    "pages/rank/main",
+    "pages/userPhone/main",
+    "pages/fans/main",
+    "pages/user/main",
+    "pages/rankAll/main",
+    "pages/msg/main",
+    "pages/zanNotice/main",
+    "pages/coopNotice/main",
+    "pages/withdraw/main",
+    "pages/giftNotice/main",
+    "pages/words/main",
+    "pages/set/main",
+    "pages/mine/main",
+    "pages/coopDetail/main",
+    "pages/coop/main",
+    "pages/invite/main",
+    "pages/who/main",
+    "pages/red/main",
+    "pages/myVideo/main",
+    "pages/gift/main",
+    "pages/report/main",
+    "pages/pkList/main",
+    "pages/songs/main",
+    "pages/challenge/main",
+    "pages/index/main"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "自助择校系统",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "van-tab": "/static/vant/tab/index",
+    "van-cell": "/static/vant/cell/index",
+    "van-field": "/static/vant/field/index",
+    "van-progress": "/static/vant/progress/index",
+    "van-tabs": "/static/vant/tabs/index",
+    "van-stepper": "/static/vant/stepper/index",
+    "van-picker": "/static/vant/picker/index",
+    "van-count-down": "/static/vant/count-down/index",
+    "van-datetime-picker": "/static/vant/datetime-picker/index",
+    "van-popup": "/static/vant/popup/index"
+  }
+}

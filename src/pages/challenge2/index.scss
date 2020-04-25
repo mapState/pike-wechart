@@ -1,0 +1,243 @@
+.container {
+  .spanLabel {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 9px;
+    border-radius: 8px;
+    color: #fff;
+    padding: 1px 4px;
+  }
+  .line {
+    height: 1px;
+    background-color: #ddd;
+  }
+  .person {
+    line-height: 47px;
+    padding: 0 18px;
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .user {
+      display: inline-block;
+      vertical-align: middle;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .name {
+      display: inline-block;
+      width: 85px;
+      line-height: 15px;
+      vertical-align: middle;
+      margin-left: 10px;
+      img {
+        width: 11px;
+        height: 11px;
+        margin-left: 2px;
+        vertical-align: middle;
+      }
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    .focus {
+      width: 50px;
+      line-height: 23px;
+      border: 1px solid #fc5428;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 11px;
+      color: #fc5428;
+      float: right;
+      margin-top: 15px;
+    }
+    .active {
+      background: rgba(252, 84, 40, 1);
+      border: none;
+      color: #fff;
+    }
+  }
+  .sList {
+    background-color: #fff;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-left: 17px;
+    position: relative;
+    .item {
+      width: 165px;
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      .img {
+        width: 165px;
+        height: 103px;
+        border-radius: 7px;
+        overflow: hidden;
+        position: relative;
+        img {
+          width: 51%;
+          position: absolute;
+          &:first-of-type {
+            left: 0;
+          }
+          &:last-of-type {
+            right: 0;
+          }
+          height: 100%;
+        }
+        .up {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          .status {
+            float: left;
+            background: rgba(252, 84, 40, 1);
+            border-radius: 0 0 7px 0;
+            font-size: 10px;
+            padding: 2px 3px;
+            color: #fff;
+          }
+          .status2 {
+            float: right;
+            background: rgba(252, 84, 40, 1);
+            border-radius: 0 0 7px 0;
+            font-size: 10px;
+            padding: 2px 3px;
+            color: #fff;
+          }
+          .num {
+            position: absolute;
+            left: 3px;
+            bottom: 3px;
+            font-size: 9px;
+            color: #fff;
+          }
+          .num2 {
+            position: absolute;
+            right: 3px;
+            bottom: 3px;
+            font-size: 9px;
+            color: #fff;
+          }
+        }
+      }
+      .label {
+        margin-top: 10px;
+        width: 100%;
+        font-size: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        span {
+          background: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(252, 84, 40, 1);
+          border-radius: 3px;
+          padding: 2px 3px;
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 11px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          color: rgba(252, 88, 45, 1);
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+  .info {
+    width: 345px;
+    // height: 99px;
+    background: rgba(243, 243, 243, 1);
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding-top: 12px;
+    .title {
+      overflow: hidden;
+      padding-bottom: 11px;
+      border-bottom: 1px solid #ddd;
+      .left {
+        float: left;
+        position: relative;
+        margin-right: 15px;
+        margin-left: 7px;
+        width: 64px;
+        height: 39px;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 3px;
+        }
+        .play {
+          width: 23px;
+          height: 23px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+        }
+      }
+      .right {
+        float: left;
+        position: relative;
+        .name {
+          width: 245px;
+          line-height: 15px;
+          span {
+            border: 1px solid rgba(252, 84, 40, 1);
+            border-radius: 3px;
+            font-size: 11px;
+            color: rgba(252, 88, 45, 1);
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0px 2px;
+            margin-right: 3px;
+            box-sizing: border-box;
+          }
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .num {
+          font-size: 10px;
+          color: rgba(51, 51, 51, 1);
+          margin-top: 10px;
+        }
+        .btn {
+          width: 54px;
+          text-align: center;
+          line-height: 24px;
+          background: rgba(252, 84, 40, 1);
+          border-radius: 12px;
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 13px;
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+    .instro {
+      justify-content: space-between;
+      font-size: 12px;
+      line-height: 35px;
+      padding-left: 8px;
+      span {
+        margin-right: 20px;
+      }
+    }
+  }
+}

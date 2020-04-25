@@ -1,0 +1,38 @@
+.container {
+  .list {
+    .item {
+      line-height: 48px;
+      padding-left: 15px;
+      border-top: 1px solid #ddd;
+      &:last-of-type {
+        border-bottom: 1px solid #ddd;
+      }
+      position: relative;
+      img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 8px;
+        height: 12px;
+        right: 12px;
+      }
+      span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 30px;
+        color: #848484;
+      }
+    }
+  }
+  .out {
+    width: 292px;
+    text-align: center;
+    line-height: 44px;
+    background: rgba(252, 84, 40, 1);
+    border-radius: 5px;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 280px;
+  }
+}

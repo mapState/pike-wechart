@@ -1,0 +1,88 @@
+.container {
+  .top {
+    background: linear-gradient(90deg, rgba(252, 85, 41, 1), rgba(255, 110, 72, 1));
+    height: 174px;
+    .report {
+      padding-top: 11px;
+      padding-right: 13px;
+      color: #fff;
+      text-align: right;
+      font-size: 15px;
+    }
+    .num {
+      text-align: center;
+      font-size: 26px;
+      font-family: PingFang SC;
+      font-weight: bold;
+      margin-top: 7px;
+      color: #fff;
+    }
+    .leave {
+      text-align: center;
+      margin-top: 7px;
+      color: #fff;
+    }
+    .get {
+      width: 74px;
+      line-height: 28px;
+      background: rgba(255, 255, 255, 1);
+      border-radius: 2px;
+      margin: 0 auto;
+      text-align: center;
+      margin-top: 20px;
+      color: #fc562a;
+    }
+  }
+  .title {
+    line-height: 56px;
+    padding-left: 15px;
+  }
+  .prices {
+    padding-left: 15px;
+    overflow: hidden;
+
+    .item {
+      width: 109px;
+      height: 64px;
+      border: 1px solid rgba(221, 221, 221, 1);
+      border-radius: 8px;
+      float: left;
+      text-align: center;
+      position: relative;
+      margin-right: 9px;
+      margin-bottom: 12px;
+      box-sizing: border-box;
+      img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 22px;
+      }
+      div {
+        &:first-of-type {
+          padding-top: 15px;
+          // padding-bottom: 10px;
+        }
+        &:last-of-type {
+          font-size: 11px;
+          // padding-bottom: 10px;
+        }
+      }
+    }
+    .active {
+      color: rgba(252, 84, 40, 1);
+      border: 1px solid rgba(252, 84, 40, 1);
+    }
+  }
+  .sub {
+    width: 292px;
+    line-height: 44px;
+    background: rgba(252, 84, 40, 1);
+    border-radius: 5px;
+    margin: 0 auto;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+  }
+}

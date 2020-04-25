@@ -1,0 +1,87 @@
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f3f3f3;
+  .nav2 {
+    background-color: #fff;
+    .item {
+      line-height: 77px;
+      
+      border-top: 1px solid #f3f3f3;
+      position: relative;
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .kong {
+        width: 16px;
+        height: 100%;
+      }
+      .number {
+        margin-left: 15px;
+        width: 25px;
+      }
+      .user {
+        display: inline-block;
+        vertical-align: middle;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .name {
+        display: inline-block;
+        width: 85px;
+        line-height: 15px;
+        vertical-align: middle;
+        margin-left: 10px;
+        img {
+          width: 11px;
+          height: 11px;
+          margin-left: 2px;
+          vertical-align: middle;
+        }
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          max-width: 65px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          
+        }
+      }
+      .mid{
+        position: absolute;
+        top: 28px;
+        right: 110px;
+        font-size: 11px;
+        line-height: 11px;
+        div{
+          &:last-of-type{
+            color: #848484;
+            padding-top: 5px;
+          }
+        }
+      }
+      .right{
+        position: absolute;
+        right: 20px;
+        font-weight: 500;
+        top: 0px;
+        img{
+          width: 7px;
+          height: 12px;
+          vertical-align: middle;
+          margin-top: -1px;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}

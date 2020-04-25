@@ -1,0 +1,535 @@
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #f3f3f3;
+  img {
+    height: auto;
+  }
+  // .line {
+  //   height: 1px;
+  //   background-color: #ddd;
+  // }
+  .navwrap {
+    position: fixed;
+    width: 100%;
+    background:linear-gradient(90deg,rgba(252,40,110,1),rgba(252,84,40,1));
+    top: 0;
+    left: 0;
+    border-top: 1px solid #ddd;
+    z-index: 20;
+    padding-bottom:4px;
+  }
+  .navInput{
+    width:271px;
+    height:22px;
+    background:rgba(255,255,255,.5);
+    border:1px solid rgba(221,221,221,1);
+    border-radius:11px;
+    margin:10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .ssIcon{
+
+    }
+    .ssText{
+      font-size:11px;
+      font-family:PingFang SC;
+      font-weight:400;
+      color:rgba(254,254,255,1);
+    }
+    
+  }
+  .nav {
+    width: 205px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding-top: 16px;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+    padding-top: 40px;
+    //background-color: #fff;
+    .active {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: bold;
+      position: relative;
+      &::after{
+        display: block;
+        content: '';
+        position: absolute;
+        bottom:-6px;
+        left:50%;
+        transform: translateX(-50%);
+        width:15px;
+        height: 3px;
+        background:rgba(255,255,255,1);
+        border-radius:3px;
+      }
+    }
+  }
+  .ad {
+    margin-top: 119px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .rank {
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    & > div {
+      box-sizing: border-box;
+      float: left;
+      width: 50%;
+      height: 79px;
+      position: relative;
+      img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 31px;
+        height: 29px;
+        left: 35px;
+      }
+      &:first-of-type {
+        border-right: 1px solid #ddd;
+        img {
+          width: 34px;
+          height: 38px;
+        }
+      }
+      .title {
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 80px;
+        margin-top: 22px;
+      }
+      .tips {
+        margin-left: 80px;
+        color: #777;
+      }
+    }
+  }
+  .littleNav {
+    background-color: #fff;
+    padding-top: 10px;
+  }
+  .lineB {
+    height: 60px;
+  }
+  .wrap {
+    background-color: #fff;
+    overflow: hidden;
+  }
+  .pkList {
+    margin: 0 auto;
+    // margin-top: 10px;
+    padding-bottom: 10px;
+    // margin-bottom: 20px;
+    // border-bottom: 20px solid #f2f2f2;
+    //border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+
+    .item {
+      // border-radius: 5px;
+      position: relative;
+      overflow: hidden;
+      .vsIcon{
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        width:30px;
+        height: 77.5px;
+        z-index: 1;
+      }
+      .left {
+        width: 194px;
+        height: 145px;
+        -webkit-clip-path: polygon(100% 0, 90% 100%, 0 100%, 0 0);
+        clip-path: polygon(100% 0, 90% 100%, 0 100%, 0 0);
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        position: relative;
+        .up {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          .num {
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            padding-left: 3px;
+            font-size: 9px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.4);
+            line-height: 25px;
+            width: 100%;
+          }
+          .win {
+            width: 40px;
+            line-height: 17px;
+            //background: rgba(252, 84, 40, 1);
+            background:linear-gradient(78deg,rgba(252,84,41,1),rgba(252,41,108,1));
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius:0px 0px 6px 0px;
+            font-size: 12px;
+          }
+          .label {
+            padding: 1px 2px;
+            line-height: 11px;
+            background: rgba(0, 0, 0, 1);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 6px;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            font-size: 9px;
+          }
+        }
+      }
+      .right {
+        border-radius: 0 5px 5px 0;
+        width: 194px;
+        height: 145px;
+        -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 10% 0);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 10% 0);
+        right: 0px;
+        top: 0;
+        overflow: hidden;
+        position: absolute;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        .win {
+          width: 40px;
+          line-height: 17px;
+          //background: rgba(252, 84, 40, 1);
+          background:linear-gradient(78deg,rgba(252,84,41,1),rgba(252,41,108,1));
+          text-align: center;
+          color: #fff;
+          position: absolute;
+          top: 0;
+          right: 0;
+          border-radius:0px 0px 6px 0px;
+          font-size: 12px;
+        }
+        .up {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          .num {
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            padding-left: 8px;
+            font-size: 9px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.4);
+            line-height: 25px;
+            width: 100%;
+          }
+          .label {
+            padding: 1px 2px;
+            line-height: 11px;
+            background: rgba(0, 0, 0, 1);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 6px;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 9px;
+          }
+        }
+      }
+    }
+    .itemTxt {
+      overflow: hidden;
+      margin-top: 10px;
+      font-size: 13px;
+      .leftTxt {
+        width: 45%;
+        float: left;
+        box-sizing: border-box;
+        padding-left:5px;
+        .img2 {
+          width: 21px;
+          height: 21px;
+          border-radius: 50%;
+          overflow: hidden;
+          display: inline-block;
+          vertical-align: middle;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .name {
+          max-width: 64px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 3px;
+        }
+        .label {
+          display: inline-block;
+          vertical-align: middle;
+          text-align: center;
+          font-size: 9px;
+          border-radius: 8px;
+          color: #fff;
+          padding: 1px 4px;
+        }
+        .instro {
+          font-size: 12px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 85%;
+        }
+      }
+      .rightTxt {
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        padding-left:10px;
+        .img2 {
+          width: 21px;
+          height: 21px;
+          border-radius: 50%;
+          overflow: hidden;
+          display: inline-block;
+          vertical-align: middle;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .name {
+          max-width: 64px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 3px;
+        }
+        .label {
+          display: inline-block;
+          vertical-align: middle;
+          text-align: center;
+          font-size: 9px;
+          border-radius: 8px;
+          color: #fff;
+          padding: 1px 4px;
+          margin: 0 3px;
+        }
+        .instro {
+          font-size: 12px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: 85%;
+        }
+      }
+    }
+  }
+  .cyList {
+    overflow: hidden;
+    // padding-top: 20px;
+    position: relative;
+    .stars {
+      margin-left: 15px;
+      margin-bottom: 10px;
+      float: left;
+      .img {
+        width: 165px;
+        height: 103px;
+        border-radius: 7px;
+        overflow: hidden;
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        .up {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          .label {
+            // width: 24px;
+            padding: 1px 2px;
+            line-height: 11px;
+            background: rgba(0, 0, 0, 1);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 6px;
+            text-align: center;
+            color: #fff;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 9px;
+          }
+        }
+      }
+      .name {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 13px;
+        .img2 {
+          width: 21px;
+          height: 21px;
+          border-radius: 50%;
+          overflow: hidden;
+          display: inline-block;
+          vertical-align: middle;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        span {
+          display: inline-block;
+          max-width: 86px;
+          vertical-align: middle;
+          margin-right: 3px;
+          line-height: 14px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .label {
+          text-align: center;
+          font-size: 9px;
+          border-radius: 8px;
+          color: #fff;
+          padding: 1px 4px;
+        }
+      }
+      .number {
+        font-size: 12px;
+      }
+    }
+  }
+  .sList {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 10px;
+    padding-left: 17px;
+    position: relative;
+    .item {
+      width: 165px;
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      .img {
+        width: 165px;
+        height: 103px;
+        border-radius: 7px;
+        overflow: hidden;
+        position: relative;
+        img {
+          width: 51%;
+          position: absolute;
+          &:first-of-type {
+            left: 0;
+          }
+          &:last-of-type {
+            right: 0;
+          }
+          height: 100%;
+        }
+        .up {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          .status {
+            float: left;
+            background: rgba(252, 84, 40, 1);
+            border-radius: 0 0 7px 0;
+            font-size: 10px;
+            padding: 2px 3px;
+            color: #fff;
+          }
+          .status2 {
+            float: right;
+            background: rgba(252, 84, 40, 1);
+            border-radius: 0 0 0 7px;
+            font-size: 10px;
+            padding: 2px 3px;
+            color: #fff;
+          }
+          .num {
+            position: absolute;
+            left: 3px;
+            bottom: 3px;
+            font-size: 9px;
+            color: #fff;
+          }
+          .num2 {
+            position: absolute;
+            right: 3px;
+            bottom: 3px;
+            font-size: 9px;
+            color: #fff;
+          }
+        }
+      }
+      .label {
+        margin-top: 10px;
+        width: 100%;
+        font-size: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        span {
+          background: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(252, 84, 40, 1);
+          border-radius: 3px;
+          padding: 2px 3px;
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 11px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          color: rgba(252, 88, 45, 1);
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+  .bga {
+    background: transparent;
+  }
+}

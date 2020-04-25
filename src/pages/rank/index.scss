@@ -1,0 +1,234 @@
+.container {
+  .label {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 9px;
+    border-radius: 8px;
+    color: #fff;
+    padding: 1px 4px;
+  }
+  .back {
+    position: fixed;
+    top: 36px;
+    left: 10px;
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  .nav {
+    width: 171px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 33px;
+    margin-bottom: 16px;
+    color: #aaa;
+    .active {
+      color: #000;
+      font-weight: 600;
+    }
+  }
+  .winner {
+    position: relative;
+    .bg {
+      width: 100%;
+    }
+
+    height: 348px;
+    .w1 {
+      position: absolute;
+      top: 90px;
+      left: 142px;
+      width: 110px;
+
+      .w1img {
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        top: -21px;
+        left: 9px;
+      }
+      .user {
+        width: 60px;
+        height: 60px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .number {
+        text-align: center;
+        font-size: 11px;
+        color: #fff;
+      }
+      .name {
+        margin-top: 5px;
+        font-size: 14px;
+        color: #fff;
+        span {
+          display: inline-block;
+          max-width: 56px;
+          vertical-align: middle;
+          margin-right: 3px;
+          line-height: 14px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+
+      .focus {
+        width: 50px;
+        line-height: 23px;
+        border: 1px solid rgba(255, 255, 255, 1);
+        border-radius: 12px;
+        text-align: center;
+        font-size: 11px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 5px;
+        color: white;
+      }
+      .active {
+        background: rgba(252, 84, 40, 1);
+        border: none;
+      }
+    }
+    .w2 {
+      left: 30px;
+      top: 120px;
+    }
+    .w3 {
+      top: 130px;
+      left: 250px;
+    }
+  }
+  .list {
+    .item {
+      line-height: 77px;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .kong {
+        width: 16px;
+        height: 100%;
+      }
+      .number {
+        margin-left: 15px;
+        margin-right: 5px;
+        width: 25px;
+      }
+      .user {
+        display: inline-block;
+        vertical-align: middle;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .name {
+        display: inline-block;
+        width: 85px;
+        line-height: 15px;
+        vertical-align: middle;
+        margin-left: 10px;
+        img {
+          width: 11px;
+          height: 11px;
+          margin-left: 2px;
+          vertical-align: middle;
+        }
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          max-width: 72px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          margin-bottom: 2px;
+        }
+      }
+      .win {
+        display: inline-block;
+        font-weight: 500;
+        // margin-left: 40px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 120px;
+      }
+      .focus {
+        display: inline-block;
+        vertical-align: middle;
+        width: 50px;
+        line-height: 23px;
+        border: 1px solid #fc5428;
+        border-radius: 12px;
+        text-align: center;
+        font-size: 11px;
+        color: #fc5428;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+      }
+      .bf {
+        margin-left: 65px;
+      }
+      .active {
+        background: rgba(252, 84, 40, 1);
+        border: none;
+        color: #fff;
+      }
+    }
+  }
+  .nav2 {
+    overflow: hidden;
+    .stars {
+      margin-left: 10px;
+      margin-bottom: 10px;
+      float: left;
+      .img {
+        width: 112px;
+        height: 90px;
+        border-radius: 4px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .name {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 13px;
+        span {
+          display: inline-block;
+          max-width: 56px;
+          vertical-align: middle;
+          margin-right: 3px;
+          line-height: 14px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+      .number {
+        font-size: 11px;
+      }
+    }
+  }
+}

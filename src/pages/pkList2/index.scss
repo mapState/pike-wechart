@@ -1,0 +1,247 @@
+.container {
+  .spanLabel {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 9px;
+    border-radius: 8px;
+    color: #fff;
+    padding: 1px 4px;
+  }
+  .input {
+    overflow: hidden;
+    & > div {
+      float: left;
+      box-sizing: border-box;
+      font-size: 11px;
+      text-align: center;
+      img {
+        width: 11px;
+        height: 11px;
+        vertical-align: middle;
+        margin-top: -3px;
+      }
+      border: 1px solid rgba(221, 221, 221, 1);
+      height: 27px;
+      line-height: 25px;
+      border-radius: 3px;
+      &:first-of-type {
+        width: 291px;
+        margin-left: 18px;
+        margin-bottom: 18px;
+        margin-right: 10px;
+      }
+      &:last-of-type {
+        width: 50px;
+      }
+    }
+  }
+
+  .line {
+    height: 1px;
+    background-color: #ddd;
+  }
+
+  .sList {
+    background-color: #fff;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-left: 17px;
+    position: relative;
+    .item {
+      width: 165px;
+      float: left;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      .img {
+        width: 165px;
+        height: 103px;
+        border-radius: 7px;
+        overflow: hidden;
+        position: relative;
+        img {
+          width: 51%;
+          position: absolute;
+          &:first-of-type {
+            left: 0;
+          }
+          &:last-of-type {
+            right: 0;
+          }
+          height: 100%;
+        }
+        .up {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          .status {
+            float: left;
+            background: rgba(252, 84, 40, 1);
+            border-radius: 0 0 7px 0;
+            font-size: 10px;
+            padding: 2px 3px;
+            color: #fff;
+          }
+          .status2 {
+            float: right;
+            background: rgba(252, 84, 40, 1);
+            border-radius: 0 0 7px 0;
+            font-size: 10px;
+            padding: 2px 3px;
+            color: #fff;
+          }
+          .num {
+            position: absolute;
+            left: 3px;
+            bottom: 3px;
+            font-size: 9px;
+            color: #fff;
+          }
+          .num2 {
+            position: absolute;
+            right: 3px;
+            bottom: 3px;
+            font-size: 9px;
+            color: #fff;
+          }
+        }
+      }
+      .label {
+        margin-top: 10px;
+        width: 100%;
+        font-size: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        span {
+          background: rgba(255, 255, 255, 1);
+          border: 1px solid rgba(252, 84, 40, 1);
+          border-radius: 3px;
+          padding: 2px 3px;
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 11px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          color: rgba(252, 88, 45, 1);
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+  .search {
+    height: 200px;
+    padding: 0 20px;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    .input {
+      width: 281px;
+      height: 27px;
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid rgba(182, 182, 182, 1);
+      border-radius: 3px;
+      padding-top: 7px;
+      padding-left: 10px;
+      position: relative;
+      img {
+        width: 11px;
+        height: 11px;
+        vertical-align: middle;
+        padding-right: 7px;
+      }
+      input {
+        font-size: 11px;
+        vertical-align: middle;
+        display: inline-block;
+        width: 250px;
+      }
+    }
+    .cancle {
+      position: absolute;
+      font-size: 13px;
+      right: 20px;
+      top: 10px;
+      z-index: 2;
+    }
+    .tip {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      span {
+        float: right;
+        font-size: 13px;
+        color: #666;
+        img {
+          width: 11px;
+          height: 12px;
+          margin-top: -2px;
+          margin-right: 2px;
+          vertical-align: middle;
+        }
+      }
+    }
+    .history {
+      .h {
+        padding: 4px 8px;
+        font-size: 11px;
+        line-height: 11px;
+        color: #555;
+        background: rgba(238, 238, 238, 1);
+        border-radius: 10px;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .filter {
+    width: 210px;
+    height: 101%;
+    background-color: #fff;
+    position: relative;
+    top: -1px;
+    padding-left: 13px;
+    .title {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .type {
+      width: 54px;
+      line-height: 29px;
+      text-align: center;
+      background: rgba(242, 242, 242, 1);
+      border-radius: 3px;
+      font-size: 13px;
+      margin-right: 8px;
+      margin-bottom: 11px;
+      float: left;
+    }
+    .active {
+      background: rgba(252, 84, 40, 1);
+      color: #fff;
+    }
+    .reset {
+      width: 90px;
+      line-height: 38px;
+      background: rgba(242, 242, 242, 1);
+      border-radius: 4px 0px 0px 4px;
+      position: absolute;
+      bottom: 25px;
+      left: 13px;
+      text-align: center;
+    }
+    .sure {
+      width: 90px;
+      line-height: 38px;
+      background: rgba(252, 84, 40, 1);
+      border-radius: 0px 4px 4px 0px;
+      position: absolute;
+      bottom: 25px;
+      right: 30px;
+      text-align: center;
+      color: #fff;
+    }
+  }
+}

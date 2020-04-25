@@ -1,0 +1,128 @@
+.container {
+  .title {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 16px;
+    padding: 20px 0;
+    span {
+      font-weight: 400;
+    }
+  }
+  .line {
+    height: 1px;
+    background-color: #ddd;
+  }
+  .instro {
+    box-sizing: border-box;
+    width: 344px;
+    height: 62px;
+    background: rgba(242, 242, 242, 1);
+    border-radius: 3px;
+    display: block;
+    margin: 0 auto;
+    padding: 12px;
+  }
+  .tags {
+    width: 336px;
+    margin-left: 30px;
+    overflow: hidden;
+    .item {
+      // width: 55px;
+      padding: 0 14px;
+      height: 29px;
+      line-height: 29px;
+      background: rgba(242, 242, 242, 1);
+      border-radius: 3px;
+      float: left;
+      margin-right: 16px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .active {
+      background: rgba(252, 84, 40, 1);
+      color: #fff;
+    }
+  }
+  .prices {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 23px;
+
+    .item {
+      width: 61px;
+      line-height: 29px;
+      border: 1px solid rgba(153, 153, 153, 1);
+      border-radius: 3px;
+      text-align: center;
+      position: relative;
+      img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 12px;
+        height: 12px;
+      }
+    }
+    .active {
+      color: rgba(252, 84, 40, 1);
+      border: 1px solid rgba(252, 84, 40, 1);
+    }
+  }
+  .self {
+    line-height: 29px;
+    margin-top: 31px;
+    padding-left: 20px;
+    .inputs {
+      float: right;
+      margin-right: 45px;
+      input {
+        width: 66px;
+        height: 29px;
+        background: rgba(242, 242, 242, 1);
+        border-radius: 3px;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 10px;
+      }
+      span{
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 10px;
+      }
+    }
+  }
+  .go {
+    overflow: hidden;
+    margin-top: 80px;
+    & > div {
+      float: left;
+      font-size: 15px;
+      text-align: center;
+      &:first-of-type {
+        width: 160px;
+        line-height: 44px;
+        background: rgba(242, 242, 242, 1);
+        border-radius: 5px;
+        margin-right: 15px;
+        margin-left: 18px;
+      }
+      &:last-of-type {
+        width: 160px;
+        line-height: 44px;
+        background: #FC5428;
+        color:rgba(255,255,255,1);
+        border-radius: 5px;
+      }
+    }
+  }
+  .save {
+    width: 160px;
+    line-height: 44px;
+    background: #fc5428;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 60px;
+  }
+}
